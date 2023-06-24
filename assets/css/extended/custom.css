@@ -1,0 +1,14 @@
+.button {
+    border-radius: 10px;
+}
+
+.red {
+    background-color: #F06868;
+    padding: 10px;
+    color: rgb(255, 255, 255, .9)
+}
+
+.red:hover {
+    color: rgb(255, 255, 255, 1);
+    font-weight: bolder;
+}
