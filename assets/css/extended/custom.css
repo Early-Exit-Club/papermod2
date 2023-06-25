@@ -1,3 +1,7 @@
+b, strong {
+    color: #F06868;
+    }
+
 .button {
     border-radius: 10px;
 }
@@ -5,7 +9,7 @@
 .red {
     background-color: #F06868;
     padding: 10px;
-    color: rgb(255, 255, 255, .9)
+    color: rgb(255, 255, 255, .9);
 }
 
 .red:hover {
@@ -23,4 +27,28 @@
     border: 2px solid #F06868;
     background-color: white;
     color: rgb(0, 0, 0, 1);
+}
+
+p a {
+    box-shadow: 0 3px 0 rgb(240, 104, 104);
+}
+
+p a:hover {
+    background-color: rgb(240, 104, 104, 0.5);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
