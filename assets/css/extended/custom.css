@@ -12,3 +12,15 @@
     color: rgb(255, 255, 255, 1);
     font-weight: bolder;
 }
+
+.secondary {
+    border: 2px solid #F06868;
+    background-color: white;
+    color: rgb(0, 0, 0, .9)
+}
+
+.secondary:hover{
+    border: 2px solid #F06868;
+    background-color: white;
+    color: rgb(0, 0, 0, 1);
+}
