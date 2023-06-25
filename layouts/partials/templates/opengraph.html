@@ -4,22 +4,30 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 {{- if .Params.cover.image -}}
 {{- if (ne .Params.cover.relative true) }}
-<meta property="og:image" content="{{ .Params.cover.image | absURL }}" />
+<meta property="og:image" content="/img/social-image.png" />
+<meta name="twitter:image" content="/img/social-image.png">
 {{- else}}
-<meta property="og:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | absURL }}" />
+<meta property="og:image" content="/img/social-image.png" />
+<meta name="twitter:image" content="/img/social-image.png">
+
 {{- end}}
 {{- else }}
 
 {{- with $.Params.images -}}
-{{- range first 6 . }}<meta property="og:image" content="{{ . | absURL }}" />{{ end -}}
+{{- range first 6 . }}
+<meta property="og:image" content="{{ . | absURL }}" />{{ end -}}
 {{- else -}}
 {{- $images := $.Resources.ByType "image" -}}
 {{- $featured := $images.GetMatch "*feature*" -}}
 {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
 {{- with $featured -}}
-<meta property="og:image" content="{{ $featured.Permalink }}"/>
+<meta property="og:image" content="/img/social-image.png" />
+<meta name="twitter:image" content="/img/social-image.png">
 {{- else -}}
-{{- with site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}"/>{{ end -}}
+{{- with site.Params.images }}
+<meta property="og:image" content="/img/social-image.png" />
+<meta name="twitter:image" content="/img/social-image.png">
+{{ end -}}
 {{- end -}}
 {{- end -}}
 {{- end }}
