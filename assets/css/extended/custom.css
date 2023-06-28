@@ -52,3 +52,11 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+.senja-embed {
+    padding: 30px;
+}
+
+.wall-of-love h2 {
+    padding-top: 20px;
+}
