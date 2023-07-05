@@ -60,3 +60,7 @@ a:active {
 .wall-of-love h2 {
     padding-top: 20px;
 }
+
+.button-subtext {
+    font-size: 10px;
+}
