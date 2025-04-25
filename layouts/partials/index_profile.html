@@ -35,10 +35,10 @@
 
         
         <div class="buttons">
-            <a href="https://newsletter.earlyexit.club"><button class="button red" title="Newsletter (free)">
+            <a href="https://newsletter.earlyexit.club/"><button class="button grey" title="Read my past newsletters">
                 <span class="button-inner">
-                    📨 Subscribe (100% free)
-                    {{- if (findRE "://" "https://newsletter.earlyexit.club") }}&nbsp;
+                    ⏸️ On Hiatus
+                    {{- if (findRE "://" "#") }}&nbsp;
                     <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
@@ -48,7 +48,6 @@
                     {{- end }}
                 </span>
             </button>
-        <p class="button-subtext">🚀 Join 1,691 other marketers who are steps away from quitting their jobs too.</p>
         </a>
         <!--{{- with .buttons }}
             {{- range . }}
@@ -71,8 +70,8 @@
         {{- end }}-->
     </div>
     {{- end}}
-    <div class="wall-of-love">
+    <!-- <div class="wall-of-love">
     <div class="senja-embed" data-id="bc3d7d60-90b9-486d-91d6-33ccfaf77e6a" data-lazyload="false"></div>
     <script async type="text/javascript" src="https://static.senja.io/dist/platform.js"></script>
-    </div>
+    </div> -->
 </div>
